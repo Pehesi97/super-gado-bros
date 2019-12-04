@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 
 public class GameController : MonoBehaviour
@@ -15,6 +16,7 @@ public class GameController : MonoBehaviour
     private AudioListener mainAudio;
     private GameObject player;
     private GameObject collidedBull;
+    private GameObject loserPanel;
 
     private bool frontCollided;
     private bool playerDead;
@@ -26,6 +28,9 @@ public class GameController : MonoBehaviour
     private int bullCount;
 
     void Start() {
+        loserPanel = GameObject.Find("loserPanel");
+        loserPanel.SetActive(false);
+
         mainCanvas = GameObject.FindWithTag("MainCanvas").GetComponent<MainCanvas>();
         player = GameObject.FindWithTag("Player");
         mainCamera = GameObject.FindWithTag("MainCamera");
@@ -43,7 +48,6 @@ public class GameController : MonoBehaviour
     void Update() {
         if (frontCollided) {
             start += Time.deltaTime;
-            loserTimer += Time.deltaTime;
 
             bool pressedKey = Input.GetKeyDown(reactionKey.ToString());
             if (pressedKey && !playerDead) {
@@ -64,6 +68,13 @@ public class GameController : MonoBehaviour
                 playerDied();
             }
         }
+        if (lost) {
+            loserTimer += Time.deltaTime;
+            if (!loserPanel.active) loserPanel.SetActive(true);
+            if (loserTimer >= 2.0f) {
+                SceneManager.LoadScene("Menu");
+            }
+        }
     }
 
     public bool isFightingABull() { return frontCollided; }
@@ -71,6 +82,7 @@ public class GameController : MonoBehaviour
     public void playerCollidedWithBull(GameObject bull) {
         frontCollided = true;
         start = 0;
+        loserTimer = 0;
         collidedBull = bull;
 
         if (autoPlay) {
@@ -91,7 +103,6 @@ public class GameController : MonoBehaviour
         mainCamera.transform.parent.gameObject.GetComponent<CameraMovement>().shouldFollow = false;
         mainCanvas.clearScreen();
         lost = true;
-        SceneManager.LoadSceneAsync("Menu");
     }
 
     public bool isPlayerDead() {
@@ -113,6 +124,7 @@ public class GameController : MonoBehaviour
     private void attackBull() {
         player.GetComponent<Animator>().Play("player_attack");
         start = 0;
+        loserTimer = 0;
         collidedBull.GetComponent<Bull>().bullDied();
         collidedBull = null;
         frontCollided = false;
