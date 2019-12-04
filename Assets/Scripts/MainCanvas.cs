@@ -12,8 +12,6 @@ public class MainCanvas : MonoBehaviour
     private GameObject bullCount;
 
     private void Start() {
-        Screen.SetResolution(720, 50, false);
-
         bullCount = GameObject.Find("BullCount");
     }
 

@@ -10,6 +10,8 @@ public class MenuController : MonoBehaviour
 	private AudioSource mainAudio;
 
 	void Start () {
+		Screen.SetResolution(1440, 100, true);
+
 		mainAudio = GameObject.Find("BackgroundMusic").GetComponent<AudioSource>();
 
 		startButton = GameObject.Find("startButton").GetComponent<Button>();
