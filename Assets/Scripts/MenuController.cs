@@ -6,14 +6,18 @@ using UnityEngine.SceneManagement;
 
 public class MenuController : MonoBehaviour
 {
-    private Button startButton;
+	private Button startButton;
+	private AudioSource mainAudio;
 
-    void Start () {
+	void Start () {
+		mainAudio = GameObject.Find("BackgroundMusic").GetComponent<AudioSource>();
+
 		startButton = GameObject.Find("startButton").GetComponent<Button>();
 		startButton.onClick.AddListener(startGame);
 	}
 
 	void startGame () {
+		mainAudio.Stop();
 		SceneManager.LoadSceneAsync("Game");
 	}
 }
