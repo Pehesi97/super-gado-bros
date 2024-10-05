@@ -13,8 +13,11 @@ If Peter collides with a bull while running, he initiates a horn fight. This hor
 # Controls
 
 Arrow keys: Move Peter
+
 Z: Run mode (preparing for horn fights)
+
 Q: Auto mode (Peter fights the bulls of Gadoland on his own)
 
 # About
-TP1 of the Digital Game Development course, made in RA14,4 (720x50).
+
+First assessment of the Digital Game Development subject from CEFET-MG, made in 14.4:1 aspect ratio (720x50).
