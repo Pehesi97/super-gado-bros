@@ -1,5 +1,7 @@
 # Super Gado Bros
 
+<img width="905" alt="image" src="https://github.com/user-attachments/assets/cc68a75b-7656-432e-ad73-326e5cd5565a">
+
 In Super Gado Bros, you are Peter.
 
 Peter is half bull, half man. While he has the goals, dreams, and ambitions of a human, he also has the instincts and strength of a bull. However, he stands out for one unique trait: his horns. They're powerful and unmistakable.
@@ -9,6 +11,8 @@ Like all bulls, Peter fights for territory. He seeks to maintain his dominance o
 If a bull attacks him when he’s caught off guard, or while he's walking peacefully, Peter is banished from existence and, consequently, from Gadoland.
 
 If Peter collides with a bull while running, he initiates a horn fight. This horn fight must be resolved by pressing the button suggested on the screen. If the wrong button is pressed, Peter is killed by the opposing bull.
+
+See the game in action: [Demo in Youtube](https://www.youtube.com/watch?v=HXyjNeyWHzQ).
 
 # Controls
 
