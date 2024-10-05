@@ -1,21 +1,20 @@
 # Super Gado Bros
 
-No Super Gado Bros, você é o Peter.
+In Super Gado Bros, you are Peter.
 
-Peter é um ser humano comum, com seus planos, sonhos e metas. Porém, ele tem um diferencial. Ele é gado. Chifrudo mesmo.
+Peter is half bull, half man. While he has the goals, dreams, and ambitions of a human, he also has the instincts and strength of a bull. However, he stands out for one unique trait: his horns. They're powerful and unmistakable.
 
-Como todo gado disputa por território, Peter busca manter sua hegemonia diante dos outros bois da Gadolândia. Esses bois vêm em sua direção, e Peter deve usar seu belo par de chifres para vencê-los, um por um.
+Like all bulls, Peter fights for territory. He seeks to maintain his dominance over the other bulls in Gadoland. These bulls come toward him, and Peter must use his impressive set of horns to defeat them, one by one.
 
-Se um boi o ataca quando desprevenido, ou andando tranquilamente, Peter é banido da existência, e consequentemente, da Gadolândia.
+If a bull attacks him when he’s caught off guard, or while he's walking peacefully, Peter is banished from existence and, consequently, from Gadoland.
 
-Se Peter colide com um boi, quando correndo, ele inicia uma briga de chifres. Essa briga de chifres deve ser solucionada pressionando o botão sugerido na tela. Caso o botão pressionado não seja o sugerido, Peter é assassinado pelo boi em questão.
+If Peter collides with a bull while running, he initiates a horn fight. This horn fight must be resolved by pressing the button suggested on the screen. If the wrong button is pressed, Peter is killed by the opposing bull.
 
-# Controles
- 
- - setas do teclado: movimentam Peter
- - Z: modo corrida (preparo para a briga de chifres)
- - Q: modo automático (Peter briga sozinho com os bois da Gadolândia)
- 
-# Sobre
+# Controls
 
-TP1 da disciplina de Desenvolvimento de Jogos Digitais, feito em RA14,4 (720x50).
+Arrow keys: Move Peter
+Z: Run mode (preparing for horn fights)
+Q: Auto mode (Peter fights the bulls of Gadoland on his own)
+
+# About
+TP1 of the Digital Game Development course, made in RA14,4 (720x50).
